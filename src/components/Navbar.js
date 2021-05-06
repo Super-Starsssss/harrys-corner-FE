@@ -18,10 +18,10 @@ export const Navbar = () => {
   }
 
   return (
-    <div className="container-fuild" >
+    <div className="container-fuild">
       <div className="row">
         <div className="col-md-12">
-          <nav className="navbar navbar-expand-lg navbar-dark">
+          <nav className="navbar navbar-expand-lg navbar-dark" style={styleNavbar}>
             <a className="navbar-brand mb-0 h1 font-weight-bold"  href="/" >Harry's Corner</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -46,8 +46,8 @@ export const Navbar = () => {
                   <button type="button" className="btn btn-outline-warning border-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   {username} </button>
                   <div class="dropdown-menu">
-                    <a className="dropdown-item">Setting</a>
-                    <a className="dropdown-item" onClick={logout}>Logout</a>                
+                    <a className="dropdown-item" href="/">Setting</a>
+                    <a className="dropdown-item" href="/" onClick={logout}>Logout</a>                
                   </div>
                 </div>}
                 {!username &&
