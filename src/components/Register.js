@@ -36,7 +36,7 @@ const Register = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const URL = 'http://localhost:4000/api/v1/users';
+      const URL = 'http://localhost:3000/api/v1/users';
       let dataSend = JSON.stringify(form);
       const requestOptions = {
         method: 'POST',
